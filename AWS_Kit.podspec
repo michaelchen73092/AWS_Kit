@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files = 'AWS_Kit/**/*.{h,plist,swift,m}'
+  s.source_files = 'AWS_Kit','AWS_Kit/**/*.{h,plist,swift,m}'
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
@@ -114,7 +114,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "someFramwork"
+
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -131,5 +132,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  #s.dependency "Bolts", "AWSAutoScaling", "AWSCloudWatch", "AWSCognito", "AWSCognitoIdentityProvider","AWSDynamoDB","AWSEC2","AWSElasticLoadBalancing","AWSIoT","AWSKinesis","AWSLambda","AWSMachineLearning","AWSMobileAnalytics","AWSS3","AWSSES","AWSSimpleDB","AWSSNS","AWSSQS"
 
 end
