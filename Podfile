@@ -1,10 +1,9 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-platform :ios, ’9.3’
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.3'
 use_frameworks!
 
-target ‘AWS_Kit’ do
-    pod ‘Bolts’
+target 'AWS_Kit' do
+    pod 'Bolts'
     pod 'AWSAutoScaling'
     pod 'AWSCloudWatch'
     pod 'AWSCognito'

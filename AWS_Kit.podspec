@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = 'AWS_Kit'
-  s.version      = '1.0.3'
+  s.version      = '1.0.4'
   s.summary      = 'The Kit for accessing AWS service'
 
   # This description is used to generate tags and improve search results.
@@ -36,8 +36,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT'
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #s.license      = 'MIT'
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files = 'AWS_Kit','AWS_Kit/**/*.{h,plist,swift,m}'
+  s.source_files = 'AWS_Kit'
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "someFramwork"
+  s.framework  = "Foundation"
 
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -132,6 +132,23 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  #s.dependency "Bolts", "AWSAutoScaling", "AWSCloudWatch", "AWSCognito", "AWSCognitoIdentityProvider","AWSDynamoDB","AWSEC2","AWSElasticLoadBalancing","AWSIoT","AWSKinesis","AWSLambda","AWSMachineLearning","AWSMobileAnalytics","AWSS3","AWSSES","AWSSimpleDB","AWSSNS","AWSSQS"
+  s.dependency "Bolts"
+  s.dependency "AWSAutoScaling"
+  s.dependency "AWSCloudWatch"
+  s.dependency "AWSCognito"
+  s.dependency "AWSCognitoIdentityProvider"
+  s.dependency "AWSDynamoDB"
+  s.dependency "AWSEC2"
+  s.dependency "AWSElasticLoadBalancing"
+  s.dependency "AWSIoT"
+  s.dependency "AWSKinesis"
+  s.dependency "AWSLambda"
+  s.dependency "AWSMachineLearning"
+  s.dependency "AWSMobileAnalytics"
+  s.dependency "AWSS3"
+  s.dependency "AWSSES"
+  s.dependency "AWSSimpleDB"
+  s.dependency "AWSSNS"
+  s.dependency "AWSSQS"
 
 end
