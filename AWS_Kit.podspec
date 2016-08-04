@@ -15,16 +15,16 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "AWS_Kit"
-  s.version      = “1.0.0”
-  s.summary      = “The Kit for accessing AWS service”
+  s.name         = 'AWS_Kit'
+  s.version      = '1.0.0'
+  s.summary      = 'The Kit for accessing AWS service'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = “This Kit is created to access AWS service, it doesn’t include AWS framework. User has to install separately”
+  s.description  = 'This Kit is created to access AWS service, it doesn’t include AWS framework. User has to install separately'
   s.homepage     = "http://EXAMPLE/AWS_Kit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = 'MIT'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "zero064" }
+  s.author             = 'zero064'
   # Or just: s.author    = "zero064"
   # s.authors            = { "zero064" => "" }
   # s.social_media_url   = "http://twitter.com/zero064"
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
-  s.platform = :ios, “9.0”
+  s.platform = :ios, "9.3"
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/michaelchen73092/AWS_Kit", :tag => "#{s.version}" }
+  s.source       = { :git => 'https://github.com/michaelchen73092/AWS_Kit.git', :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files = “AWS_Kit/**/*.{h,plist,m}”
+  s.source_files = 'AWS_Kit/**/*.{h,plist,m}'
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
