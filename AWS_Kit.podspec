@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = 'AWS_Kit'
-  s.version      = '1.0.4'
+  s.version      = '1.0.5'
   s.summary      = 'The Kit for accessing AWS service'
 
   # This description is used to generate tags and improve search results.
@@ -36,8 +36,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #s.license      = 'MIT'
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = 'MIT'
+  #s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files = 'AWS_Kit'
+s.source_files = 'AWS_Kit', "AWS_Kit/**/*.{h,m,swift}"
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
@@ -114,9 +114,9 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "Foundation"
+  #s.framework  = "Foundation"
 
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "Foundation", "CoreData"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
