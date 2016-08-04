@@ -15,6 +15,7 @@
 		ACF8D7B81D52B21B006D361F /* dynamoDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */; };
 		ACF8D7BA1D52B254006D361F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7B91D52B254006D361F /* Constants.swift */; };
 		ACF8D7BC1D52BA55006D361F /* DelegateCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */; };
+		ACF8D7BE1D52CC0E006D361F /* s3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dynamoDBManager.swift; sourceTree = "<group>"; };
 		ACF8D7B91D52B254006D361F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateCollect.swift; sourceTree = "<group>"; };
+		ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = s3Manager.swift; path = ../s3Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		ACE715B21D52A5E300DF7D6D /* AWS_Kit */ = {
 			isa = PBXGroup;
 			children = (
+				ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */,
 				ACE715CA1D52A6B900DF7D6D /* testB.swift */,
 				ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */,
 				ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */,
@@ -268,6 +271,7 @@
 				ACE715CB1D52A6B900DF7D6D /* testB.swift in Sources */,
 				ACF8D7BC1D52BA55006D361F /* DelegateCollect.swift in Sources */,
 				ACF8D7B81D52B21B006D361F /* dynamoDBManager.swift in Sources */,
+				ACF8D7BE1D52CC0E006D361F /* s3Manager.swift in Sources */,
 				ACF8D7BA1D52B254006D361F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
