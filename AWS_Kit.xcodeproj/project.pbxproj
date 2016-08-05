@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0D2BC4625FB7E4AC9CC4CE80 /* Pods_AWS_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C00CFCA155F9670B3D511BB /* Pods_AWS_Kit.framework */; };
+		AC4BD0F31D541ACD00A966C7 /* credentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */; };
 		ACE715B41D52A5E300DF7D6D /* AWS_Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE715B31D52A5E300DF7D6D /* AWS_Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACE715BB1D52A5E300DF7D6D /* AWS_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE715B01D52A5E300DF7D6D /* AWS_Kit.framework */; };
 		ACE715C01D52A5E300DF7D6D /* AWS_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE715BF1D52A5E300DF7D6D /* AWS_KitTests.swift */; };
 		ACE715CB1D52A6B900DF7D6D /* testB.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE715CA1D52A6B900DF7D6D /* testB.swift */; };
+		ACEFC3581D53298D00F751C8 /* s3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFC3571D53298D00F751C8 /* s3Manager.swift */; };
 		ACF8D7B81D52B21B006D361F /* dynamoDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */; };
 		ACF8D7BA1D52B254006D361F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7B91D52B254006D361F /* Constants.swift */; };
 		ACF8D7BC1D52BA55006D361F /* DelegateCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */; };
-		ACF8D7BE1D52CC0E006D361F /* s3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		2AD66B0151596BE885361EBA /* Pods-AWS_Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_Kit/Pods-AWS_Kit.debug.xcconfig"; sourceTree = "<group>"; };
 		6C00CFCA155F9670B3D511BB /* Pods_AWS_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8219095B30DDC742D75B28DE /* Pods-AWS_Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_Kit/Pods-AWS_Kit.release.xcconfig"; sourceTree = "<group>"; };
+		AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = credentialManager.swift; sourceTree = "<group>"; };
 		ACE715B01D52A5E300DF7D6D /* AWS_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWS_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE715B31D52A5E300DF7D6D /* AWS_Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWS_Kit.h; sourceTree = "<group>"; };
 		ACE715B51D52A5E300DF7D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,10 +41,10 @@
 		ACE715BF1D52A5E300DF7D6D /* AWS_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS_KitTests.swift; sourceTree = "<group>"; };
 		ACE715C11D52A5E300DF7D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE715CA1D52A6B900DF7D6D /* testB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = testB.swift; path = ../testB.swift; sourceTree = "<group>"; };
+		ACEFC3571D53298D00F751C8 /* s3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = s3Manager.swift; sourceTree = "<group>"; };
 		ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dynamoDBManager.swift; sourceTree = "<group>"; };
 		ACF8D7B91D52B254006D361F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateCollect.swift; sourceTree = "<group>"; };
-		ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = s3Manager.swift; path = ../s3Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +107,9 @@
 		ACE715B21D52A5E300DF7D6D /* AWS_Kit */ = {
 			isa = PBXGroup;
 			children = (
-				ACF8D7BD1D52CC0E006D361F /* s3Manager.swift */,
 				ACE715CA1D52A6B900DF7D6D /* testB.swift */,
+				ACEFC3571D53298D00F751C8 /* s3Manager.swift */,
+				AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */,
 				ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */,
 				ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */,
 				ACF8D7B91D52B254006D361F /* Constants.swift */,
@@ -268,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4BD0F31D541ACD00A966C7 /* credentialManager.swift in Sources */,
 				ACE715CB1D52A6B900DF7D6D /* testB.swift in Sources */,
 				ACF8D7BC1D52BA55006D361F /* DelegateCollect.swift in Sources */,
 				ACF8D7B81D52B21B006D361F /* dynamoDBManager.swift in Sources */,
-				ACF8D7BE1D52CC0E006D361F /* s3Manager.swift in Sources */,
+				ACEFC3581D53298D00F751C8 /* s3Manager.swift in Sources */,
 				ACF8D7BA1D52B254006D361F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
