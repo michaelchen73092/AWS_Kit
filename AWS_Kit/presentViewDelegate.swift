@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol presentViewDelegate {
+public protocol presentViewDelegate {
     func presentView(view:UIViewController)
 }
