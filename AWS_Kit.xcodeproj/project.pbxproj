@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D2BC4625FB7E4AC9CC4CE80 /* Pods_AWS_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C00CFCA155F9670B3D511BB /* Pods_AWS_Kit.framework */; };
 		AC4BD0F31D541ACD00A966C7 /* credentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */; };
+		AC4BD0F91D55494D00A966C7 /* presentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0F81D55494D00A966C7 /* presentViewDelegate.swift */; };
 		ACE715B41D52A5E300DF7D6D /* AWS_Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE715B31D52A5E300DF7D6D /* AWS_Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACE715BB1D52A5E300DF7D6D /* AWS_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE715B01D52A5E300DF7D6D /* AWS_Kit.framework */; };
 		ACE715C01D52A5E300DF7D6D /* AWS_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE715BF1D52A5E300DF7D6D /* AWS_KitTests.swift */; };
@@ -34,6 +35,7 @@
 		6C00CFCA155F9670B3D511BB /* Pods_AWS_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8219095B30DDC742D75B28DE /* Pods-AWS_Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS_Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS_Kit/Pods-AWS_Kit.release.xcconfig"; sourceTree = "<group>"; };
 		AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = credentialManager.swift; sourceTree = "<group>"; };
+		AC4BD0F81D55494D00A966C7 /* presentViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = presentViewDelegate.swift; sourceTree = "<group>"; };
 		ACE715B01D52A5E300DF7D6D /* AWS_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWS_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE715B31D52A5E300DF7D6D /* AWS_Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWS_Kit.h; sourceTree = "<group>"; };
 		ACE715B51D52A5E300DF7D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				ACE715CA1D52A6B900DF7D6D /* testB.swift */,
 				ACEFC3571D53298D00F751C8 /* s3Manager.swift */,
+				AC4BD0F81D55494D00A966C7 /* presentViewDelegate.swift */,
 				AC4BD0F21D541ACD00A966C7 /* credentialManager.swift */,
 				ACF8D7B71D52B21B006D361F /* dynamoDBManager.swift */,
 				ACF8D7BB1D52BA55006D361F /* DelegateCollect.swift */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4BD0F91D55494D00A966C7 /* presentViewDelegate.swift in Sources */,
 				AC4BD0F31D541ACD00A966C7 /* credentialManager.swift in Sources */,
 				ACE715CB1D52A6B900DF7D6D /* testB.swift in Sources */,
 				ACF8D7BC1D52BA55006D361F /* DelegateCollect.swift in Sources */,

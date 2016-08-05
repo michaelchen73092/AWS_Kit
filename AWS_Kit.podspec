@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = 'AWS_Kit'
-  s.version      = '1.0.7'
+  s.version      = '1.0.8'
   s.summary      = 'The Kit for accessing AWS service'
 
   # This description is used to generate tags and improve search results.
@@ -116,7 +116,7 @@ s.source_files = 'AWS_Kit', "AWS_Kit/**/*.{h,m,swift}"
 
   #s.framework  = "Foundation"
 
-  s.frameworks = "Foundation", "CoreData"
+  s.frameworks = "Foundation", "CoreData", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
