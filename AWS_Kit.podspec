@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = 'AWS_Kit'
-  s.version      = '1.0.6'
+  s.version      = '1.0.7'
   s.summary      = 'The Kit for accessing AWS service'
 
   # This description is used to generate tags and improve search results.
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
-  s.platform = :ios, "9.3"
+  s.platform = :ios, "9.0"
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 

@@ -10,9 +10,9 @@ import Foundation
 import AWSCognitoIdentityProvider
 import Bolts
 
-class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDelegate{
+public class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDelegate{
     // MARK:  Initialization
-    init(delegate_window:AWSCognitoIdentityPasswordAuthentication){
+ public init(delegate_window:AWSCognitoIdentityPasswordAuthentication){
         super.init()
         self.delegate_window = delegate_window
         //identity pool and user pool setting for configuration
@@ -23,7 +23,7 @@ class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDele
         self.pool = pool
         self.pool?.delegate = self
     }
-    func authentication()->BFTask{
+   public func authentication()->BFTask{
         let taskcompletion = BFTaskCompletionSource()
 
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:84ad56ea-0e25-4a70-9b78-7d45235f75d7", identityProviderManager:self.pool)
@@ -56,7 +56,7 @@ class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDele
     var user_in_wait:AWSCognitoIdentityUser? = nil
     var pool:AWSCognitoIdentityUserPool? = nil
     var delegate_window:AWSCognitoIdentityPasswordAuthentication?
-    func startPasswordAuthentication()->AWSCognitoIdentityPasswordAuthentication{
+  public  func startPasswordAuthentication()->AWSCognitoIdentityPasswordAuthentication{
         let loginViewC = self.delegate_window
         dispatch_async(dispatch_get_main_queue()) {
             print("start Authentication process!!")
@@ -74,7 +74,7 @@ class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDele
                 return loginViewC!
     }
     //signUp function
-    func signUp(email_str:String,password_str:String)->BFTask{
+ public   func signUp(email_str:String,password_str:String)->BFTask{
         let taskcompletion = BFTaskCompletionSource()
         var attrs:[AWSCognitoIdentityUserAttributeType] = [AWSCognitoIdentityUserAttributeType]()
          var email = AWSCognitoIdentityUserAttributeType()
@@ -94,7 +94,7 @@ class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDele
          }
         return taskcompletion.task
     }
-    func verifyEmail(email:String,confirm_code:String)->BFTask{
+public func verifyEmail(email:String,confirm_code:String)->BFTask{
         var taskcompletion = BFTaskCompletionSource()
         var unverify_user = self.pool!.getUser(createUserName(email))
         var awstask  = unverify_user.confirmSignUp(confirm_code)
@@ -108,7 +108,7 @@ class credentialManager:NSObject,AWSCognitoIdentityInteractiveAuthenticationDele
         }
         return taskcompletion.task
     }
-    func createUserName(email:String)->String{
+public func createUserName(email:String)->String{
         var result_str:String = ""
         for character in email.characters {
             if(character == "@" || character == "."){
